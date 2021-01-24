@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="css/styles.css">												 
     <title>Ristorante Con Fusion</title>
 
 </head>
 
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a></div>
+			
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" height="30" width="41">Ristorante Con Fusion</a>
             <!-- Collapsed Nav bar - for mobile web -->
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
@@ -32,26 +34,32 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>    
             </div>
+		</div>
             <!---->
     </nav>
     <!--End of Navigation Bar-->
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                    <div>
+            <div class="row row-header">
+                    <div class="col-12 col-sm-6">
                         <h1>Ristorante con Fusion</h1>
                         <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                     </div>
-                    <div class="col-12 col-sm-6">
-                        <div class="col-12 col-sm">
-                        </div>
+                    <div class="col-12 col-sm align-self-center">
+                        <img src="img/logo.png" class="img-fluid">
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class="col-12 col-sm align-self-center">
+                        <form>
+							<div class="form-group row"> 
+								<button class="btn btn-warning " formaction="#Reserve">
+									<h5 class="px-4">Reserve a Table</h5>
+							</div>
+					</div>
+			</div> 
+		</div>  
     </header>
+
 
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -92,7 +100,7 @@
         </div>
         <div class="col col-sm order-sm-first col-md">
             <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/chef.png" alt="alberto">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
                 <div class="media-body">
                 <h2 class="mt-top">Alberto Somayya</h2>
                     <h4>Executive Chef</h4>
@@ -108,7 +116,7 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                       <h4 class="modal-title">Reserve a Table </h4>  
+                       <h4 class="card card-header bg-warning text-white" id="Reserve">Reserve a Table</h4>
                         <button type="button" class="close" >&times;</button>
                     </div>
                      <div class="modal-body">

@@ -1,13 +1,11 @@
-
-@white: #ffffff;
-@off-white: #eeeeee;
-@lt-gray: #dddddd;
-@indigo: #303f9f;
-@dark-indigo: #1a237e;
-@light-indigo: #7986CB;
+@background-dark: #512DA8;
+@background-light: #9575CD;
+@background-pale: #D1C4E9;
+@lt-gray: #ddd;
+@white: #fff;
 
 // Height variables
-@carousel-height: 300px;
+@carousel-item-height: 300px;
 
 .zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
   margin:0px auto;
@@ -24,50 +22,50 @@
   min-height:400px;
 }
 
-.row-footer {
+.footer {
   .zero-margin(20px, 0px);
-  background-color: #AfAfAf;
+  background-color: @background-pale;
 }
 
 .jumbotron {
   .zero-margin(70px, 30px);
-  background:@light-indigo;
+  background: @background-light;
   color:floralwhite;
 }
 
 .carousel {
-  background: @dark-indigo;
-  .item {
-    height:@carousel-height;
+  background: @background-dark;
+  .carousel-item {
+    height: @carousel-item-height;
     img {
-      left:0;
-      min-height: @carousel-height;
-      position:absolute;
-      top:0;
+      left: 0;
+      min-height: 300px;
+      position: absolute;
+      top: 0;
     }
   }
 }
 
 .navbar-inverse {
-  background: @indigo;
+  background: @background-light;
   color:@white;
   .navbar-nav > .active > a {
-    background: @dark-indigo;
+    background: @background-dark;
     color:@white;
     &:hover {
-      background: @dark-indigo;
+      background: @background-dark;
       color:@white;
     }
     &:focus {
-      background: @dark-indigo;
+      background: @background-dark;
       color: @white;
     }
   }
   .navbar-nav > .open > a {
-    background: @dark-indigo;
+    background: @background-dark;
     color:@white;
     &:hover {
-      background: @dark-indigo;
+      background: @background-dark;
       color:@white;
     }
   }
@@ -80,9 +78,12 @@ address {
 }
 
 body {
-  align:center;
   padding:50px 0px 0px 0px;
   z-index:0;
+}
+
+.navbar-dark {
+    background-color: @background-dark;
 }
 
 .tab-content {

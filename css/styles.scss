@@ -1,14 +1,13 @@
+$lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
-$lt-gray: #ddd;
-$white: #fff;
 
+// Height variables
 $carousel-item-height: 300px;
-
-@mixin zero-margin($pad-up-dn, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-dn $pad-left-right;
+@mixin zero-margin($padding-up-dn:0, $padding-left-right: 0) {
+    margin: 0 auto;
+    padding: $padding-up-dn $padding-left-right;
 }
 
 .row-header{
@@ -73,4 +72,14 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header {
+    background-color: $background-dark;
+    color: floralwhite;
+    .close { color: floralwhite; }
+}
+
+.modal-body {
+    background-color: $background-pale;
 }
